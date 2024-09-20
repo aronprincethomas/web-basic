@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <title> Basic Form Example</title>
+      </head>
+      <body>
+            
+            <h1>Basic Form Example</h1>
+
+            <form action="submit-form" method="post">
+                  <fieldset>
+                        <legend>Personal Information</legend>
+
+                        <!-- TextField -->
+                         <label for="name">Name:</label>
+                         <input type="name" id="name" name="name" required> <br><br>
+
+                        <!-- EmailField -->
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required> <br><br>
+
+                        <!-- DateField -->
+                         <label for="dob">Date of Birth:</label>
+                         <input type="date" id="date" name="date" required> <br><br>
+
+                        <!-- RadioButton -->
+                         <label> Gender:</label>
+                         <input type="radio" id="male" name="gender" value="male">
+                         <label for="male">Male</label>
+                         <input type="radio" id="female" name="gender" value="female">
+                         <label for="female">Female</label> <br><br>
+                        
+                        <!-- CheckBox -->
+                         <label>Hobbies</label><br>
+                         <input type="checkbox" id="reading" name="hobbies" value="reading">
+                         <label for="sports">Reading</label><br>
+                         <input type="checkbox" id="sports" name="hobbies" value="sports">
+                         <label for="sports">Sports</label><br>
+                         <input type="checkbox" id="music" name="hobbies" value="music">
+                         <label for="music">Music</label><br><br>
+
+                        <!-- SelectDropdown -->
+                         <label>Country:</label>
+                         <select name="country" id="country">
+                              <option value="india">India</option>
+                              <option value="usa">USA</option>
+                              <option value="canada">Canada</option>
+                              <option value="australia">Australia</option>
+                         </select><br><br>
+
+                         <!-- FileUpload -->
+                          <label for="file">Upload your photo:</label>
+                          <input type="file" id="file" name="file"><br><br>
+
+                  </fieldset>
+                  <!-- Reset and Submit Buttons -->
+                  <input type="submit" value="Submit">
+                  <input type="reset" value="Reset">
+            </form>
+      </body>
+</html>
