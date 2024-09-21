@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <script>
+                  function internal(){
+                        alert('Internal Java Script')
+                  }
+            </script>
+            <script src="external.js">
+
+            </script>
+      </head>
+      <body>
+            <h1 onclick="javascript:alert('Inline Java Script')">Inline Javascript</h1>
+            <h1 onclick="internal()">Internal Javascript</h1>
+            <h1 onclick="show()">External Javascript</h1>
+            
+      </body>
+</html>
